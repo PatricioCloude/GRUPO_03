@@ -1,0 +1,103 @@
+
+body {
+    background: url(gif.gif);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+canvas { 
+    border: 1px groove rgb(247, 0, 255); 
+    background-color: rgb(76, 81, 151);
+    font-family: 'Courier New', Courier, monospace;
+    animation: rojo-neon1 2s infinite alternate;
+    transition: .10s ease;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive; 
+    text-shadow: 0 0 5px red,0 0 15px red,0 0 15px red;
+    animation: rojo-neon 2s infinite alternate;
+    transition: .10s ease;
+    
+}
+
+.subtitulo{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;  
+    text-shadow: 0 0 5px red,0 0 15px red,0 0 30px red;
+    animation: azul-neon 2s infinite alternate;
+    transition: .10s ease;
+}
+
+
+@keyframes azul-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 9px 9px 18px #3485ff, 
+					 3px 3px 5px #00246c, 
+					 -3px -3px 5px #00246c, 
+					 -9px -9px 27px #3485ff;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+
+@keyframes rojo-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 9px 9px 18px #ff3434, 
+					 3px 3px 5px #6c0000, 
+					 -3px -3px 5px #6c0000, 
+					 -9px -9px 27px #ff3434;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+@keyframes rojo-neon1 {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		box-shadow: 9px 9px 18px #e734ff, 
+					 3px 3px 5px #6c0067, 
+					 -3px -3px 5px #6c0000, 
+					 -9px -9px 27px #ff34dd;
+	}
+
+	10%, 15%, 60% {
+		box-shadow: none;
+	}
+}
+
+.btn-info{
+    margin: 0.5rem;
+    color: #ffffff;
+    background-color: rgb(45, 55, 187);
+    border: 2px solid rgb(255, 0, 183);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+
+.btn-info:hover{
+    color: #ffffff;
+    text-shadow: 0 0 5px rgb(255, 251, 0),0 0 15px rgb(238, 255, 0),0 0 15px rgb(225, 255, 0);
+    background: rgb(0, 18, 217);
+    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0 0 5px red,0 0 15px red,0 0 30px red;
+    transform: translateY(-4px);
+}
+.btn-info:active {
+    transform: translateY(-1px);
+  }
